@@ -1,0 +1,200 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+html
+    font-size: 18px
+    font-weight: 300
+    font-family: 'Montserrat', sans-serif
+a
+    text-decoration: none
+
+li
+    list-style: none
+.container
+    width: 1200px
+    margin: 0 auto
+.wraper
+    .navMenu
+        width: 100%
+        height: 100px
+        background-color: #fff
+        position: fixed
+        top: 0
+        z-index: 10
+        box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.5)
+        .navMenu_inner
+            display: flex
+            justify-content: space-between
+            align-items: center
+            // background: green
+            height: 100px
+            .navMenu_inner_logo
+                display: flex
+                justify-content: center
+                align-items: center
+                div
+                    width: 50px
+                    height: 50px
+                    img
+                        width: 100%
+                        height: 100%
+                p
+                    font-weight: 500
+                    font-size: 25px
+                    line-height: 125.3%
+                    color: #000
+            .navMenu_main
+                ul
+                    // background: red
+                    display: flex
+                    align-items: center
+                    gap: 40px
+                    li
+                        a
+                            position: relative
+                            button
+                                cursor: pointer
+                                background: transparent
+                                font-size: 20px
+                                border: none
+                            button:hover:after
+                                content: ""
+                                display: inline-block
+                                width: 100%
+                                height: 2px
+                                position: absolute
+                                background: black
+                                bottom: -5px
+                                left: 0
+            .navMenu_inner_number
+                display: flex
+                align-items: center
+                justify-content: center
+                gap: 10px
+                border-radius: 15px
+                width: 200px
+                > button
+                    border-radius: 50%
+                    background: white
+                    padding: 10px
+                    font-family: 'Montserrat', sans-serif
+                    font-size: 18px
+                    font-weight: 600px
+                    border: none
+                    cursor: pointer
+    /////////////////////////////////////////////
+    .consultation
+        position: relative
+        margin: 100px 0 0 0 
+        .consultation_shadow
+            background: url("/images/index/consultation/bac-d_consultation.jpg")
+            width: 100%
+            height: 500px
+            background-size: cover
+            background-position-x: center
+            background-position-y: center
+            background-repeat: no-
+            background-attachment: fixed
+        .consultation_content
+            position: absolute  
+            top: 0
+            left: 0
+            height: 500px
+            width: 100%
+            background-color: rgba(0, 0, 0, 0.6)
+            .consultation_inner
+                text-align: center
+                h3
+                    font-weight: 800
+                    font-size: 55px
+                    line-height: 125.3%
+                    color: #FFf
+                    text-align: center
+                    padding: 80px 0 0 0 
+                    max-width: 700px
+                    margin: 0 auto 20px
+                p
+                    font-weight: 400
+                    font-size: 25px
+                    line-height: 125.3%
+                    color: #FFf
+                button
+                    font-family: 'Montserrat', sans-serif
+                    margin: 40px auto 0px
+                    background: #fff
+                    border: 1px solid black
+                    padding: 10px 40px
+                    border-radius: 15px
+                    transition: 0.7s
+                    a
+                        font-size: 25px
+                        font-weight: 600
+                        color: #000
+                        font-weight: 500px
+                    a:hover
+                        color: #fff
+                button:hover
+                    background-color: #000
+    /////////////////////////////////////////////
+    footer
+        background: black
+        padding: 50px 0
+        .footer_inner
+            > div
+                display: flex
+                justify-content: space-between
+                align-items: center
+                text-align: center
+                span
+                    display: block
+                    margin: 0 0 20px
+                    font-weight: 500
+                    font-size: 18px
+                    line-height: 125.3%
+                    color: #fff
+                .logo
+                    display: flex
+                    align-items: center
+                    gap: 10px
+                    > div
+                        width: 50px
+                        height: 50px
+                        border-radius: 50%
+                        img
+                            width: 100%
+                            height: 100%
+                            border-radius: 50%
+                    p
+                        font-weight: 500
+                        font-size: 25px
+                        line-height: 125.3%
+                        color: #fff
+                .location
+                    p
+                        font-weight: 500
+                        font-size: 20px
+                        width: 500px
+                        line-height: 125.3%
+                        color: #fff
+                        width: 250px
+                .work_time
+                    p
+                        font-weight: 500
+                        font-size: 20px
+                        width: 500px
+                        line-height: 125.3%
+                        color: #fff
+                        width: 250px
+                .email
+                    p
+                        font-weight: 500
+                        font-size: 20px
+                        // width: 500px
+                        line-height: 125.3%
+                        color: #fff
+
+
+
+
+        

@@ -109,7 +109,7 @@ li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 20px;
+  gap: 10px;
   border-radius: 15px;
   width: 200px;
 }
@@ -123,88 +123,6 @@ li {
   border: none;
   cursor: pointer;
 }
-.wraper .header {
-  position: relative;
-}
-.wraper .header .header_shadow {
-  height: 100vh;
-  width: 100%;
-  background-image: url("/images/index/header/bac-header.jpeg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-y: top;
-}
-.wraper .header .header_content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 100px 0 0 0;
-}
-.wraper .header .header_content .header_inner h1 {
-  font-weight: 800;
-  font-size: 55px;
-  line-height: 125.3%;
-  color: #FFf;
-  text-align: center;
-  padding: 100px 0 30px;
-}
-.wraper .header .header_content .header_inner > div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 50px;
-}
-.wraper .header .header_content .header_inner > div h2 {
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 125.3%;
-  color: #FFf;
-  width: 450px;
-  padding: 0 40px;
-  text-align: center;
-}
-.wraper .header .header_content .header_inner > div ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 500px;
-  gap: 30px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 0 auto;
-}
-.wraper .header .header_content .header_inner > div ul li {
-  max-width: 210px;
-}
-.wraper .header .header_content .header_inner > div ul li > div {
-  width: 32px;
-  height: 32px;
-  margin: 0 auto 20px;
-}
-.wraper .header .header_content .header_inner > div ul li > div img {
-  width: 100%;
-  height: 100%;
-}
-.wraper .header .header_content .header_inner > div ul li p {
-  font-size: 18px;
-  font-weight: 500;
-  color: white;
-  text-align: center;
-}
 .wraper .translation {
   position: relative;
 }
@@ -215,7 +133,7 @@ li {
 .wraper .translation .translation_inner h3 {
   position: absolute;
   padding: 20px 0;
-  top: -5px;
+  top: 100px;
   width: 100%;
   right: 0;
   font-weight: 600;
@@ -227,11 +145,11 @@ li {
   background: #000;
   margin: 0 0 0 50px;
 }
-.wraper .translation .translation_inner ul {
-  padding: 100px 0 0 0;
+.wraper .translation .translation_inner > ul {
+  padding: 200px 0 0 0;
   margin: 10px 0 0 0;
 }
-.wraper .translation .translation_inner ul li {
+.wraper .translation .translation_inner > ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -249,83 +167,82 @@ li {
   margin-bottom: 15px;
   border-radius: 15px;
 }
-.wraper .translation .translation_inner ul li h4 {
+.wraper .translation .translation_inner > ul li h4 {
   font-size: 25px;
   font-weight: 400px;
   max-width: 270px;
   display: block;
   width: 33.3%;
 }
-.wraper .translation .translation_inner ul li h5 {
-  font-size: 25px;
-  font-weight: 400px;
-  width: 270px;
-  width: 33.3%;
-}
-.wraper .translation .translation_inner ul li h6 {
+.wraper .translation .translation_inner > ul li h5 {
   font-size: 22px;
   font-weight: 400px;
   width: 270px;
   width: 33.3%;
   display: block;
 }
-.wraper .translation .translation_inner ul li p {
+.wraper .translation .translation_inner > ul li p {
   font-size: 20px;
   font-weight: 500;
   width: 33.3%;
 }
-.wraper .translation .translation_inner ul li span {
+.wraper .translation .translation_inner > ul li span {
   display: block;
   width: 33.3%;
 }
-.wraper .translation .translation_inner ul li b {
+.wraper .translation .translation_inner > ul li b {
   display: block;
   width: 33.3%;
 }
-.wraper .translation .translation_inner ul li:nth-child(1) {
+.wraper .translation .translation_inner > ul li:nth-child(1) {
   padding: 30px 100px 30px 130px;
 }
-.wraper .translation .translation_inner ul li:last-child p {
+.wraper .translation .translation_inner > ul li:last-child p {
   font-size: 20px;
   font-weight: 700;
 }
-.wraper .document {
-  text-align: center;
-  padding: 20px 0 100px 0;
+.wraper .translation .translation_inner > div {
+  width: 100%;
+  margin: 50px 0 0 0;
 }
-.wraper .document h3 {
-  margin: 0 0 50px 0;
-}
-.wraper .document .document_inner {
-  margin: 0 0 50px 0;
+.wraper .translation .translation_inner > div ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.wraper .document .document_inner > div {
-  max-width: 250px;
-  min-height: 220px;
-  padding: 20px;
-  border-radius: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 200px;
+  text-align: center;
+  padding: 30px 80px;
   -webkit-box-shadow: 2px 2px 50px rgba(104, 104, 104, 0.25);
           box-shadow: 2px 2px 50px rgba(104, 104, 104, 0.25);
+  margin-bottom: 15px;
+  border-radius: 15px;
 }
-.wraper .document .document_inner > div h4 {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 125.3%;
-  color: #000;
-  margin: 0 0 15px 0;
+.wraper .translation .translation_inner > div ul li p {
+  font-size: 20px;
+  font-weight: 500;
+  width: 33.3%;
 }
-.wraper .document .document_inner > div p {
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 125.3%;
-  color: #000;
-  width: 100%;
+.wraper .translation .translation_inner > div ul li h4 {
+  font-size: 35px;
+  font-weight: 600;
+}
+.wraper .translation .translation_inner > div ul li h5 {
+  font-size: 25px;
+  font-weight: 600;
+}
+.wraper .translation .translation_inner > div ul li span {
+  display: block;
+  width: 33.3%;
+}
+.wraper .translation .translation_inner > div ul li b {
+  display: block;
+  width: 33.3%;
 }
 .wraper .consultation {
   position: relative;
@@ -388,181 +305,6 @@ li {
 }
 .wraper .consultation .consultation_content .consultation_inner button:hover {
   background-color: #000;
-}
-.wraper .info_company_inner {
-  height: 70vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 100px;
-}
-.wraper .info_company_inner > div:nth-child(1) {
-  max-width: 600px;
-  text-align: center;
-}
-.wraper .info_company_inner > div:nth-child(1) h4 {
-  font-weight: 800;
-  font-size: 25px;
-  width: 500px;
-  line-height: 125.3%;
-  color: #000;
-  margin: 20px auto;
-}
-.wraper .info_company_inner > div:nth-child(1) p {
-  font-weight: 500;
-  font-size: 18px;
-  width: 600px;
-  line-height: 125.3%;
-  color: #000;
-}
-.wraper .info_company_inner > div:nth-child(2) {
-  max-width: 600px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 25px;
-  text-align: center;
-}
-.wraper .info_company_inner > div:nth-child(2) > div {
-  width: 200px;
-  height: 140px;
-  padding: 15px 10px;
-  border-radius: 10px;
-  -webkit-box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.5);
-}
-.wraper .info_company_inner > div:nth-child(2) > div > div {
-  width: 50px;
-  height: 50px;
-  margin: 0 auto;
-}
-.wraper .info_company_inner > div:nth-child(2) > div > div img {
-  width: 100%;
-  height: 100%;
-}
-.wraper .info_company_inner > div:nth-child(2) > div span {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 125.3%;
-  color: #000;
-}
-.wraper .info_company_inner > div:nth-child(2) > div p {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 125.3%;
-  color: #000;
-  margin: 10px 0 0 0;
-}
-.wraper .reviews {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 50px 0;
-}
-.wraper .reviews .reviews_inner {
-  text-align: center;
-}
-.wraper .reviews .reviews_inner h4 {
-  font-weight: 500;
-  font-size: 45px;
-  line-height: 125.3%;
-  margin: 0 auto 50px;
-}
-.wraper .reviews .reviews_inner > div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 20px;
-}
-.wraper .reviews .reviews_inner > div > div {
-  -webkit-box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.2);
-  max-width: 320px;
-  padding: 20px;
-  border-radius: 10px;
-  background-color: #afaf64;
-  min-height: 200px;
-  -webkit-animation: startComment 1s forwards;
-          animation: startComment 1s forwards;
-}
-@-webkit-keyframes startComment {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes startComment {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.wraper .reviews .reviews_inner > div > div > div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 10px;
-  margin: 0 0 20px 0;
-}
-.wraper .reviews .reviews_inner > div > div > div h5 {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 125.3%;
-  color: #000;
-}
-.wraper .reviews .reviews_inner > div > div > div div {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
-.wraper .reviews .reviews_inner > div > div > div div img {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-}
-.wraper .reviews .reviews_inner > div > div > div > p {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 125.3%;
-  color: #000;
-}
-.wraper .reviews .reviews_inner > div button {
-  background: transparent;
-  width: 50px;
-  height: 50px;
-  border: none;
 }
 .wraper footer {
   background: black;

@@ -71,7 +71,7 @@ li
                 display: flex
                 align-items: center
                 justify-content: center
-                gap: 20px
+                gap: 10px
                 border-radius: 15px
                 width: 200px
                 > button
@@ -84,69 +84,6 @@ li
                     border: none
                     cursor: pointer
     /////////////////////////////////////////////
-    .header
-        position: relative
-        .header_shadow
-            height: 100vh
-            width: 100%
-            background-image: url("/images/index/header/bac-header.jpeg")  
-            background-attachment: fixed
-            background-position: center
-            background-repeat: no-repeat
-            background-size: cover
-            background-position-y: top
-        .header_content
-            position: absolute
-            top: 0
-            left: 0
-            height: 100vh
-            width: 100%
-            background-color: rgba(0, 0, 0, 0.7)
-            padding: 100px 0 0 0
-            .header_inner
-                h1
-                    font-weight: 800
-                    font-size: 55px
-                    line-height: 125.3%
-                    color: #FFf
-                    text-align: center
-                    padding: 100px 0 30px
-                > div
-                    display: flex
-                    align-items: center
-                    margin-top: 50px
-                    h2
-                        font-weight: 600
-                        font-size: 40px
-                        line-height: 125.3%
-                        color: #FFf
-                        width: 450px
-                        padding: 0 40px
-                        text-align: center
-                    ul
-                        display: flex
-                        justify-content: space-between
-                        align-items: center
-                        width: 500px
-                        gap: 30px
-                        flex-wrap: wrap
-                        // width: 80%
-                        margin: 0 auto
-                        li
-                            max-width: 210px
-                            > div
-                                width: 32px
-                                height: 32px
-                                margin: 0 auto 20px
-                                img
-                                    width: 100%
-                                    height: 100%
-                            p
-                                font-size: 18px
-                                font-weight: 500
-                                color: white
-                                text-align: center
-    /////////////////////////////////////////////
     .translation
         position: relative
         .translation_inner
@@ -155,7 +92,7 @@ li
             h3
                 position: absolute
                 padding: 20px 0
-                top: -5px
+                top: 100px
                 width: 100%
                 right: 0
                 font-weight: 600
@@ -166,8 +103,8 @@ li
                 margin: 50px 0 30px 0
                 background: #000
                 margin: 0 0 0 50px 
-            ul
-                padding: 100px 0 0 0 
+            > ul
+                padding: 200px 0 0 0 
                 margin: 10px 0 0 0 
                 li
                     display: flex
@@ -186,11 +123,6 @@ li
                         display: block
                         width: 33.3%
                     h5
-                        font-size: 25px
-                        font-weight: 400px
-                        width: 270px
-                        width: 33.3%
-                    h6
                         font-size: 22px
                         font-weight: 400px
                         width: 270px
@@ -213,34 +145,36 @@ li
                     p
                         font-size: 20px
                         font-weight: 700
-    /////////////////////////////////////////////
-    .document
-        text-align: center
-        padding: 20px 0 100px 0
-        h3
-            margin: 0 0 50px 0
-        .document_inner
-            margin: 0 0 50px 0
-            display: flex
-            justify-content: space-between
             > div
-                max-width: 250px
-                min-height: 220px
-                padding: 20px
-                border-radius: 10px
-                box-shadow: 2px 2px 50px rgba(104, 104, 104, 0.25)
-                h4
-                    font-weight: 700
-                    font-size: 18px
-                    line-height: 125.3%
-                    color: #000
-                    margin: 0 0 15px 0
-                p
-                    font-weight: 400
-                    font-size: 15px
-                    line-height: 125.3%
-                    color: #000
-                    width: 100%
+                width: 100%
+                margin: 50px 0 0 0 
+                ul
+                    li
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        gap: 200px
+                        text-align: center
+                        padding: 30px 80px
+                        box-shadow: 2px 2px 50px rgba(104, 104, 104, 0.25)
+                        margin-bottom: 15px
+                        border-radius: 15px
+                        p
+                            font-size: 20px
+                            font-weight: 500
+                            width: 33.3%
+                        h4
+                            font-size: 35px
+                            font-weight: 600
+                        h5
+                            font-size: 25px
+                            font-weight: 600
+                        span
+                            display: block
+                            width: 33.3%
+                        b
+                            display: block
+                            width: 33.3%                   
     /////////////////////////////////////////////
     .consultation
         position: relative
@@ -293,123 +227,6 @@ li
                         color: #fff
                 button:hover
                     background-color: #000
-    /////////////////////////////////////////////
-    .info_company_inner
-        height: 70vh
-        display: flex
-        justify-content: center
-        align-items: center
-        gap: 100px
-        > div:nth-child(1)
-            max-width: 600px
-            text-align: center
-            h4
-                font-weight: 800
-                font-size: 25px
-                width: 500px
-                line-height: 125.3%
-                color: #000
-                margin: 20px auto
-            p
-                font-weight: 500
-                font-size: 18px
-                width: 600px
-                line-height: 125.3%
-                color: #000
-        > div:nth-child(2)
-            max-width: 600px
-            display: flex
-            justify-content: center
-            align-items: center
-            flex-wrap: wrap
-            gap: 25px
-            text-align: center
-            > div
-                width: 200px
-                height: 140px
-                padding: 15px 10px
-                border-radius: 10px
-                box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.5)
-                > div
-                    width: 50px
-                    height: 50px
-                    margin: 0 auto
-                    img
-                        width: 100%
-                        height: 100%
-                span
-                    font-weight: 700
-                    font-size: 18px
-                    line-height: 125.3%
-                    color: #000
-                p
-                    font-weight: 600
-                    font-size: 12px
-                    line-height: 125.3%
-                    color: #000
-                    margin: 10px 0 0 0
-    /////////////////////////////////////////////
-    .reviews
-        background-color: rgba(0, 0, 0, 0.5)
-        padding: 50px 0
-        .reviews_inner
-            text-align: center      
-            // background-color: rgba(0, 0, 0, 0.1)
-            h4
-                font-weight: 500
-                font-size: 45px
-                line-height: 125.3%
-                // background-color: rgba(0, 0, 0, 0.9)
-                margin: 0 auto 50px
-            > div
-                display: flex
-                justify-content: center
-                align-items: center
-                gap: 20px
-                > div
-                    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.2)
-                    max-width: 320px
-                    padding: 20px 
-                    border-radius: 10px
-                    background-color: #afaf64
-                    min-height: 200px
-                    animation: startComment 1s forwards
-                    @keyframes startComment
-                        0%
-                            opacity: 0
-                        50%
-                            opacity: 0.5
-                        100%
-                            opacity: 1
-                    > div
-                        display: flex
-                        justify-items: center
-                        align-items: center
-                        gap: 10px
-                        margin:0 0 20px 0 
-                        h5
-                            font-weight: 700
-                            font-size: 20px
-                            line-height: 125.3%
-                            color: #000
-                        div
-                            width: 40px
-                            height: 40px
-                            border-radius: 50%
-                            img
-                                width: 100%
-                                height: 100%
-                                border-radius: 50%
-                        > p
-                            font-weight: 500
-                            font-size: 18px
-                            line-height: 125.3%
-                            color: #000
-                button
-                    background: transparent
-                    width: 50px
-                    height: 50px
-                    border: none
     /////////////////////////////////////////////
     footer
         background: black

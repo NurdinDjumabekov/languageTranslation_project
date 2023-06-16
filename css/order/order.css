@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.wraper .navMenu {
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  -webkit-box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.5);
+}
+.wraper .navMenu .navMenu_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+}
+.wraper .navMenu .navMenu_inner .navMenu_inner_logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.wraper .navMenu .navMenu_inner .navMenu_inner_logo div {
+  width: 50px;
+  height: 50px;
+}
+.wraper .navMenu .navMenu_inner .navMenu_inner_logo div img {
+  width: 100%;
+  height: 100%;
+}
+.wraper .navMenu .navMenu_inner .navMenu_inner_logo p {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 125.3%;
+  color: #000;
+}
+.wraper .navMenu .navMenu_inner .navMenu_main ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+}
+.wraper .navMenu .navMenu_inner .navMenu_main ul li a {
+  position: relative;
+}
+.wraper .navMenu .navMenu_inner .navMenu_main ul li a button {
+  cursor: pointer;
+  background: transparent;
+  font-size: 20px;
+  border: none;
+}
+.wraper .navMenu .navMenu_inner .navMenu_main ul li a button:hover:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  background: black;
+  bottom: -5px;
+  left: 0;
+}
+.wraper .navMenu .navMenu_inner .navMenu_inner_number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+  border-radius: 15px;
+  width: 200px;
+}
+.wraper .navMenu .navMenu_inner .navMenu_inner_number > button {
+  border-radius: 50%;
+  background: white;
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 600px;
+  border: none;
+  cursor: pointer;
+}
+.wraper .consultation {
+  position: relative;
+  margin: 100px 0 0 0;
+}
+.wraper .consultation .consultation_shadow {
+  background: url("/images/index/consultation/bac-d_consultation.jpg");
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-;
+  background-attachment: fixed;
+}
+.wraper .consultation .consultation_content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 500px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.wraper .consultation .consultation_content .consultation_inner {
+  text-align: center;
+}
+.wraper .consultation .consultation_content .consultation_inner h3 {
+  font-weight: 800;
+  font-size: 55px;
+  line-height: 125.3%;
+  color: #FFf;
+  text-align: center;
+  padding: 80px 0 0 0;
+  max-width: 700px;
+  margin: 0 auto 20px;
+}
+.wraper .consultation .consultation_content .consultation_inner p {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 125.3%;
+  color: #FFf;
+}
+.wraper .consultation .consultation_content .consultation_inner button {
+  font-family: "Montserrat", sans-serif;
+  margin: 40px auto 0px;
+  background: #fff;
+  border: 1px solid black;
+  padding: 10px 40px;
+  border-radius: 15px;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+.wraper .consultation .consultation_content .consultation_inner button a {
+  font-size: 25px;
+  font-weight: 600;
+  color: #000;
+  font-weight: 500px;
+}
+.wraper .consultation .consultation_content .consultation_inner button a:hover {
+  color: #fff;
+}
+.wraper .consultation .consultation_content .consultation_inner button:hover {
+  background-color: #000;
+}
+.wraper footer {
+  background: black;
+  padding: 50px 0;
+}
+.wraper footer .footer_inner > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+.wraper footer .footer_inner > div span {
+  display: block;
+  margin: 0 0 20px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 125.3%;
+  color: #fff;
+}
+.wraper footer .footer_inner > div .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+.wraper footer .footer_inner > div .logo > div {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.wraper footer .footer_inner > div .logo > div img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.wraper footer .footer_inner > div .logo p {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 125.3%;
+  color: #fff;
+}
+.wraper footer .footer_inner > div .location p {
+  font-weight: 500;
+  font-size: 20px;
+  width: 500px;
+  line-height: 125.3%;
+  color: #fff;
+  width: 250px;
+}
+.wraper footer .footer_inner > div .work_time p {
+  font-weight: 500;
+  font-size: 20px;
+  width: 500px;
+  line-height: 125.3%;
+  color: #fff;
+  width: 250px;
+}
+.wraper footer .footer_inner > div .email p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 125.3%;
+  color: #fff;
+}
