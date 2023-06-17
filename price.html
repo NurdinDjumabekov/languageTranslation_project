@@ -3,22 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>AD Translations</title>
     <link rel="stylesheet" href="./css/price/price.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Montserrat:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
   </head>
+
   <body>
     <div class="wraper">
       <div class="navMenu">
         <div class="container">
           <div class="navMenu_inner">
+            <div class="nav_btn">
+              <button id="btn_nav">
+                <div></div>
+                <div></div>
+                <div></div>
+              </button>
+              <div class="shadow_nav">
+                <div class="navMenu_main_innerBtn">
+                  <ul>
+                    <li>
+                      <a href="/index.html">
+                        <button class="btn_html">Главная</button>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/price.html">
+                        <button class="btn_price">Услуги и цены</button>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/order.html">
+                        <button class="btn_order">Заказать</button>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/abourUs.html">
+                        <button class="btn_aboutUs">О нас</button>
+                      </a>
+                    </li>
+                    <li>
+                      <p>Наши контакты</p>
+                      <p>+996995333037</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
             <div class="navMenu_inner_logo">
               <div>
                 <img
@@ -26,7 +62,7 @@
                   alt="logo"
                 />
               </div>
-              <p>AD Translating</p>
+              <p>AD Translations</p>
             </div>
             <div class="navMenu_main">
               <ul>
@@ -128,7 +164,7 @@
             <div>
               <ul>
                 <li>
-                  <h4>Заверение нотариусом</h4>
+                  <h4 class="legal">Заверение нотариусом</h4>
                 </li>
                 <li>
                   <p>Частный нотариус</p>
@@ -155,7 +191,9 @@
                 </li>
                 <!-- ///////////// -->
                 <li>
-                  <h5>ЛЕГАЛИЗАЦИЯ ДЛЯ ГРАЖДАН КР (ДО ПОСОЛЬСТВА)</h5>
+                  <h5 class="legal">
+                    ЛЕГАЛИЗАЦИЯ ДЛЯ ГРАЖДАН КР (ДО ПОСОЛЬСТВА)
+                  </h5>
                 </li>
                 <li>
                   <p>Справки, свидетельства</p>
@@ -182,6 +220,40 @@
           </div>
         </div>
       </div>
+      <div class="document">
+        <div class="container">
+          <h3>КАКИЕ ДОКУМЕНТЫ ПРИНИМАЕТ В РАБОТУ НАШЕ БЮРО ПЕРЕВОДОВ</h3>
+          <div class="document_inner">
+            <div>
+              <h4>Организационно-административные</h4>
+              <p>
+                договоры, инструкции, правила, контракты, положения,редактура,
+                письменный перевод и пр.
+              </p>
+            </div>
+            <div>
+              <h4>Справочные и информационные</h4>
+              <p>
+                служебные и объяснительные записки, акты, докладные, справки,
+                выписки, озвучка, выразительный перевод, транскрипция, дубляж
+              </p>
+            </div>
+            <div>
+              <h4>Личные</h4>
+              <p>
+                паспорта, резюме, характеристики, заявления, доверенности,
+                жалобы и др.
+              </p>
+            </div>
+            <div>
+              <h4>проверка качества перевода в таких языковых областях как:</h4>
+              <p>
+                медицина, фармацевтика, Юридическая, Маркетинг, ИТ, Техническая
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="consultation">
         <div class="consultation_shadow"></div>
         <div class="consultation_content">
@@ -190,10 +262,13 @@
               <h3>ХОТИТЕ ПОЛУЧИТЬ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ?</h3>
               <p>Обязательно напишите нам!</p>
               <button>
-                <a href="">WhatsApp</a>
+                <a href="https://api.whatsapp.com/send?phone=0995333037"
+                  >WhatsApp</a
+                >
               </button>
               <button>
                 <a href="">Telegram</a>
+                <!-- https://t.me/myusername -->
               </button>
             </div>
           </div>
@@ -210,7 +285,7 @@
                     alt="logo"
                   />
                 </div>
-                <p>Переводы</p>
+                <p>AD Translations</p>
               </div>
               <div class="location">
                 <span>Наш адрес</span>

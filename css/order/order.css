@@ -20,7 +20,7 @@ li {
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -34,6 +34,11 @@ li {
   -webkit-box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.5);
 }
+@media screen and (max-width: 970px) {
+  .wraper .navMenu {
+    height: auto;
+  }
+}
 .wraper .navMenu .navMenu_inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -45,6 +50,93 @@ li {
       -ms-flex-align: center;
           align-items: center;
   height: 100px;
+}
+@media screen and (max-width: 1225px) {
+  .wraper .navMenu .navMenu_inner {
+    padding: 0 50px;
+  }
+}
+@media screen and (max-width: 1225px) and (max-width: 970px) {
+  .wraper .navMenu .navMenu_inner {
+    height: 80px;
+  }
+}
+@media screen and (max-width: 1225px) and (max-width: 970px) and (max-width: 480px) {
+  .wraper .navMenu .navMenu_inner {
+    padding: 0 20px;
+  }
+}
+.wraper .navMenu .navMenu_inner .nav_btn {
+  display: none;
+}
+@media screen and (max-width: 970px) {
+  .wraper .navMenu .navMenu_inner .nav_btn {
+    display: block;
+  }
+}
+.wraper .navMenu .navMenu_inner .nav_btn button {
+  padding: 1px;
+  background: transparent;
+  width: 40px;
+  height: 50px;
+  border: none;
+}
+.wraper .navMenu .navMenu_inner .nav_btn button div:nth-child(1) {
+  height: 3px;
+  width: 90%;
+  margin: 3px auto;
+  background: black;
+}
+.wraper .navMenu .navMenu_inner .nav_btn button div:nth-child(2) {
+  height: 3px;
+  width: 90%;
+  margin: 6px auto;
+  background: black;
+}
+.wraper .navMenu .navMenu_inner .nav_btn button div:nth-child(3) {
+  height: 4px;
+  width: 90%;
+  margin: 3px auto;
+  background: black;
+}
+.wraper .navMenu .navMenu_inner .shadow_nav {
+  position: fixed;
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: transparent;
+}
+.wraper .navMenu .navMenu_inner .shadow_nav .navMenu_main_innerBtn {
+  height: 100vh;
+  padding: 130px 0px 50px 0px;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background: white;
+  width: 300px;
+  -webkit-box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.2);
+}
+.wraper .navMenu .navMenu_inner .shadow_nav .navMenu_main_innerBtn ul li a {
+  display: block;
+}
+.wraper .navMenu .navMenu_inner .shadow_nav .navMenu_main_innerBtn ul li a button {
+  display: block;
+  font-size: 20px;
+  font-weight: 500;
+  width: 100%;
+}
+.wraper .navMenu .navMenu_inner .shadow_nav .navMenu_main_innerBtn ul li:last-child {
+  width: 100%;
+  text-align: center;
+}
+.wraper .navMenu .navMenu_inner .shadow_nav .navMenu_main_innerBtn ul li:last-child p {
+  display: block;
+  font-size: 18px;
+  color: #000;
 }
 .wraper .navMenu .navMenu_inner .navMenu_inner_logo {
   display: -webkit-box;
@@ -66,10 +158,16 @@ li {
   height: 100%;
 }
 .wraper .navMenu .navMenu_inner .navMenu_inner_logo p {
+  font-family: "Cardo", serif;
   font-weight: 500;
   font-size: 25px;
   line-height: 125.3%;
   color: #000;
+}
+@media screen and (max-width: 970px) {
+  .wraper .navMenu .navMenu_inner .navMenu_main {
+    display: none;
+  }
 }
 .wraper .navMenu .navMenu_inner .navMenu_main ul {
   display: -webkit-box;
@@ -109,9 +207,19 @@ li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 10px;
+  gap: 20px;
   border-radius: 15px;
   width: 200px;
+}
+@media screen and (max-width: 970px) {
+  .wraper .navMenu .navMenu_inner .navMenu_inner_number {
+    display: none;
+  }
+}
+@media screen and (max-width: 1020px) {
+  .wraper .navMenu .navMenu_inner .navMenu_inner_number {
+    width: 100px;
+  }
 }
 .wraper .navMenu .navMenu_inner .navMenu_inner_number > button {
   border-radius: 50%;
@@ -125,7 +233,6 @@ li {
 }
 .wraper .consultation {
   position: relative;
-  margin: 100px 0 0 0;
 }
 .wraper .consultation .consultation_shadow {
   background: url("/images/index/consultation/bac-d_consultation.jpg");
@@ -134,8 +241,14 @@ li {
   background-size: cover;
   background-position-x: center;
   background-position-y: center;
-  background-repeat: no-;
+  background-repeat: no-repeat;
   background-attachment: fixed;
+  margin-top: 100px;
+}
+@media screen and (max-width: 970px) {
+  .wraper .consultation .consultation_shadow {
+    margin-top: 80px;
+  }
 }
 .wraper .consultation .consultation_content {
   position: absolute;
@@ -156,7 +269,18 @@ li {
   text-align: center;
   padding: 80px 0 0 0;
   max-width: 700px;
-  margin: 0 auto 20px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 800px) {
+  .wraper .consultation .consultation_content .consultation_inner h3 {
+    font-size: 45px;
+  }
+}
+@media screen and (max-width: 800px) and (max-width: 600px) {
+  .wraper .consultation .consultation_content .consultation_inner h3 {
+    font-size: 30px;
+    padding: 120px 20px 0 20px;
+  }
 }
 .wraper .consultation .consultation_content .consultation_inner p {
   font-weight: 400;
@@ -174,11 +298,22 @@ li {
   -webkit-transition: 0.7s;
   transition: 0.7s;
 }
+@media screen and (max-width: 600px) {
+  .wraper .consultation .consultation_content .consultation_inner button {
+    padding: 5px 20px;
+  }
+}
 .wraper .consultation .consultation_content .consultation_inner button a {
   font-size: 25px;
   font-weight: 600;
   color: #000;
   font-weight: 500px;
+}
+@media screen and (max-width: 600px) {
+  .wraper .consultation .consultation_content .consultation_inner button a {
+    font-size: 20px;
+    font-weight: 500;
+  }
 }
 .wraper .consultation .consultation_content .consultation_inner button a:hover {
   color: #fff;
@@ -189,6 +324,9 @@ li {
 .wraper footer {
   background: black;
   padding: 50px 0;
+}
+.wraper footer .footer_inner {
+  padding: 0 15px;
 }
 .wraper footer .footer_inner > div {
   display: -webkit-box;
@@ -201,6 +339,16 @@ li {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media screen and (max-width: 1200px) {
+  .wraper footer .footer_inner > div {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 50px;
+  }
 }
 .wraper footer .footer_inner > div span {
   display: block;
@@ -256,4 +404,9 @@ li {
   font-size: 20px;
   line-height: 125.3%;
   color: #fff;
+}
+@media screen and (max-width: 425px) {
+  .wraper footer .footer_inner > div .email p {
+    font-size: 15px;
+  }
 }
