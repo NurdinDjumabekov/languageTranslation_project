@@ -34,7 +34,7 @@ li {
   -webkit-box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.5);
 }
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 1080px) {
   .wraper .navMenu {
     height: auto;
   }
@@ -56,12 +56,12 @@ li {
     padding: 0 50px;
   }
 }
-@media screen and (max-width: 1225px) and (max-width: 970px) {
+@media screen and (max-width: 1225px) and (max-width: 1080px) {
   .wraper .navMenu .navMenu_inner {
     height: 80px;
   }
 }
-@media screen and (max-width: 1225px) and (max-width: 970px) and (max-width: 480px) {
+@media screen and (max-width: 1225px) and (max-width: 1080px) and (max-width: 480px) {
   .wraper .navMenu .navMenu_inner {
     padding: 0 20px;
   }
@@ -69,7 +69,7 @@ li {
 .wraper .navMenu .navMenu_inner .nav_btn {
   display: none;
 }
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 1080px) {
   .wraper .navMenu .navMenu_inner .nav_btn {
     display: block;
   }
@@ -99,44 +99,78 @@ li {
   margin: 3px auto;
   background: black;
 }
-.wraper .navMenu .navMenu_inner .shadow_nav {
+.wraper .navMenu .navMenu_inner .nav_btn > div .shadow_nav {
   position: fixed;
   z-index: 9;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   top: 0;
   left: 0;
   background: transparent;
 }
-.wraper .navMenu .navMenu_inner .shadow_nav .navMenu_main_innerBtn {
+.wraper .navMenu .navMenu_inner .nav_btn > div .navMenu_main_innerBtn {
   height: 100vh;
   padding: 130px 0px 50px 0px;
   position: fixed;
   z-index: 10;
   top: 0;
   left: 0;
-  background: white;
+  background: #fff;
   width: 300px;
   -webkit-box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.2);
 }
-.wraper .navMenu .navMenu_inner .shadow_nav .navMenu_main_innerBtn ul li a {
+.wraper .navMenu .navMenu_inner .nav_btn > div .navMenu_main_innerBtn ul li a {
   display: block;
 }
-.wraper .navMenu .navMenu_inner .shadow_nav .navMenu_main_innerBtn ul li a button {
+.wraper .navMenu .navMenu_inner .nav_btn > div .navMenu_main_innerBtn ul li a button {
   display: block;
   font-size: 20px;
   font-weight: 500;
   width: 100%;
 }
-.wraper .navMenu .navMenu_inner .shadow_nav .navMenu_main_innerBtn ul li:last-child {
+.wraper .navMenu .navMenu_inner .nav_btn > div .navMenu_main_innerBtn ul li .navMenu_inner_number {
+  display: none;
+  width: 100%;
+}
+@media screen and (max-width: 1080px) {
+  .wraper .navMenu .navMenu_inner .nav_btn > div .navMenu_main_innerBtn ul li .navMenu_inner_number {
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 15px;
+    border-radius: 15px;
+    margin-top: 20px;
+  }
+  .wraper .navMenu .navMenu_inner .nav_btn > div .navMenu_main_innerBtn ul li .navMenu_inner_number > button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: white;
+    padding: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 600px;
+    border: none;
+    cursor: pointer;
+  }
+}
+.wraper .navMenu .navMenu_inner .nav_btn > div .navMenu_main_innerBtn ul .data {
   width: 100%;
   text-align: center;
 }
-.wraper .navMenu .navMenu_inner .shadow_nav .navMenu_main_innerBtn ul li:last-child p {
+.wraper .navMenu .navMenu_inner .nav_btn > div .navMenu_main_innerBtn ul .data p {
   display: block;
   font-size: 18px;
   color: #000;
+  margin: 0 auto;
 }
 .wraper .navMenu .navMenu_inner .navMenu_inner_logo {
   display: -webkit-box;
@@ -164,7 +198,7 @@ li {
   line-height: 125.3%;
   color: #000;
 }
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 1080px) {
   .wraper .navMenu .navMenu_inner .navMenu_main {
     display: none;
   }
@@ -207,11 +241,11 @@ li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 20px;
+  gap: 10px;
   border-radius: 15px;
   width: 200px;
 }
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 1080px) {
   .wraper .navMenu .navMenu_inner .navMenu_inner_number {
     display: none;
   }
@@ -439,13 +473,13 @@ li {
   position: relative;
 }
 .wraper .consultation .consultation_shadow {
-  background: url("/images/index/consultation/bac-d_consultation.jpg");
+  background: url("/images/index/consultation/bac-d.jpg");
   width: 100%;
   height: 500px;
   background-size: cover;
   background-position-x: center;
   background-position-y: center;
-  background-repeat: no-repeat;
+  background-repeat: no-;
   background-attachment: fixed;
 }
 .wraper .consultation .consultation_content {

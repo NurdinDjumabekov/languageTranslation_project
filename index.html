@@ -26,7 +26,8 @@
                 <div></div>
                 <div></div>
               </button>
-              <div class="shadow_nav">
+              <div>
+                <div class="shadow_nav"></div>
                 <div class="navMenu_main_innerBtn">
                   <ul>
                     <li>
@@ -45,13 +46,20 @@
                       </a>
                     </li>
                     <li>
-                      <a href="/abourUs.html">
+                      <a href="/aboutUs.html">
                         <button class="btn_aboutUs">О нас</button>
                       </a>
                     </li>
-                    <li>
+                    <li class="data">
                       <p>Наши контакты</p>
                       <p>+996995333037</p>
+                    </li>
+                    <li>
+                      <div class="navMenu_inner_number">
+                        <button class="btn_ru">RU</button>
+                        <button class="btn_en">EN</button>
+                        <button class="btn_kg">KG</button>
+                      </div>
                     </li>
                   </ul>
                 </div>
@@ -59,10 +67,7 @@
             </div>
             <div class="navMenu_inner_logo">
               <div>
-                <img
-                  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYVFRgVFhUYFhgYFBgYHBgaGBgZGRgcGRkZGhgYGhkcITEmHB4sHxocJjgmKy8xNTU1HCQ7QDs2Py40NTEBDAwMEA8QHhISHzQlJSw3NDE2PTY0NDU9NDU0NDQ0NDQxNDQ0ND09NDQ0NDQ0NDQ0NDQ0NDQ1NDQ0NDQ0PTQ0NP/AABEIAMUBAAMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABAUCAwYBB//EADkQAAICAAUCBAUBBgUFAQAAAAECABEDBBIhMUFRBSJhcQYTMoGRoUJSgrHB0WJykuHwFCMkosLx/8QAGQEBAAMBAQAAAAAAAAAAAAAAAAECBAMF/8QAJxEAAgIBBAEDBAMAAAAAAAAAAAECEQMEEiExQVFhcRMiMqFCUvD/2gAMAwEAAhEDEQA/APs0REAREQBERAEREAREQBERAETBnA5NTWcXsCf0/nvJoizfPJDXNEmtJHqR/ept+d7RtZCkmb4kPFzyJ9TKvoTv+JDXx1CaVWb2AkqEn0iHkjF02XESuwvF8JjVkHiiP7TDxlcR8IjAYawQwGqrq9r6b1+JDi12iVOL6ZaROQ8J+I3FpmFKuraSSteo1Dnjr/8AsvR4mLAI2IJBBBBI3r8b/Yym5eSy5LKJHwc6jAEMPNxexP2MkywEREAREQBERAEREAREQBERAEREAREQBETTiYlbD8wDYTU1Pi9prZpgTLJFWzL/AJ6/meFpiTMWcDckAdyakkEHM+IMNQCMqKDeI2wG37KkW2+0jeDeKBtSuxLAk6jQBX/5+8mZxtSEq+gqC2oaSBQ62Dt7TisfNs1amZq4s2B9ppxwU01VGLNleOSd2X3iWfwGYMoDtqAYkNWkdRvRPrNORzWEjai7bitIVuNvqIrVt6etShDGid6HJ6C+LmeIjKFYqQGFg9D9/tO/04pbbM31pOW6kWePmk1HQgAs1d8dDR4+8wXNm7v/AGlWMSZYWt20phu5Bo0KUe7tQiThBfcyYrJN/ai7xMyMQaX81DZv2l9m5r04lNnc1jZcjRTobO5AAIFqSCfLuBvwb+0tcLwHGK6sXETBXrRs7ivrbYfYGetg5PB85vGax52Oochb1Oa5IG087Nkxy/FHo4MeSP5M0ZnxbThpiKlri7gBjaPuXQ6eeGPuG2nuU8XzgrRhOe4KvX21GgfXeW+Sz7OSowhhgoflsysylhexJAB2AO3QHeacHNZl1Uk6LG4GlK36eU79OdjM6NRJyPi+fJ8+UXTxs4U+92fxUvkzq1b1hnqGZdvvc5YZF38r4jGz+89jfv5h1H4kLwxk+acJtvKGXpZN6iT1PEtuZFI7zAx1cWrBh3BBH6TdOAfGTDxBo0Bm1BWARiCv1V6g9evBl1gZrMDz/MRk6Flq724UWN9qvmTu9SKOkiVeR8YR/LY1Dmrr3F7yemOpNBhfbrtztLJpkG6IiSBERAEREAREQBETVivW0A8xMToJoJgmYEyyRVs9JnhMEzAtJIMiZynxRm9TjDrZNye5YfptOjxcUKCzGgBZPYTl/FvHVfSqICobUS6ghq4Fdt/eaMCe60rM2qlHZtboqcthF3CKLJNccep9J1eR8OTCJq2JWizEfcBenEoMPxXHfyYSIpPJw0APpZOw95Z4Pg+MV14uZdKFnSxoKNzz6ekvnyUqbr28nDTQV2k37+ESc9jqhRWAGGQ4YcAkigoQbsTfSQct4divqXDTTgsb/wC8t16otgj+KjJOFmsFKOChxHZTWI5Zia5q7Yje64mLDGxgQ70p43CrV2KA2IrrbV2mF5pdLg3/AEY3bPMHw/LYYIZ/nsPqA06RfQ/s/Y2ZlmPEcbZMJEwlOwew1drJFKPsZX4OKuFjrhn6bcb7+YOQLNb7LX3m7xrOqNZS2ZGUEAUKfkEnlfUXRoTk7bt8nVJJUjRmcqCScTHfFxFOyi6BvYebc89AOR0kjJo4JKLZNebTZU73vuVPuw/QyZ4NjJiBVYBlI1IT+qsOpHO99e0w8Zd0IAYhRsK8qiza2B+P4D3kexLdFllss4wyHJ1k6tyG0sNxVdLHUmY4WJ5waA17mxdMv1p+lj2YzLwrMM+GpbkbX3rr/T7TVmUpiBtq8yns6/0IH6HvKhcor3+J9GYOC6aUDFQ3FUQNRvYg2DQ4B6yp+JwcLGDgcW47kXqIH5Ye3vLbxHK4WNTsGVitMQUUUNirFtrFEbb7TPxLDGYw2DaUKjUrWSBxsTQFH0MsmhRW5vCR8LVhqCQxcEMTX06ihAP7vFgWBJXwv4n8xWR6vqOhPcehG/pRlZ4SjIhw28jqTpv6Te+kj34PYyF4azYGZ14pKliSQo1Kel+QE8Ht1lu0DqMHKBMQOr3uaABJNkih0o/pxOsyuDQsjzEb+npKzwbC1/8AeJbSSSilQux21VVkdr732Mu5MV5ZXo9iIlwIiIAiIgCIiAYMaEiu02Yz71NBMskVbBM8JnhMwZpJB6zSLmc0EUu/lA5P9q3J9PUT3HxwoLMaAFknoJz2PlXzJGI5+TgjZS31NfVV6k/8uXil3J0jnkk1xFW/92R/F/F/n1hYaEgsDx5mrgBRwJ7geAqih8y4w16JfmPpt/IfmTPnfJXTlsIDo2KxBf8A09P+bSI+TUMWxXbHxCAdidC2LDXyw7VpX8SJal1thwv2Vhpt0t2Xl/onDObFMrhadPLECxxRN+VbBJsknbibMhgMrnGbFD/sOu7DSSaOo0NiRwoFBpEy2TZgD9KkDcmh7Doef2Fqxz1l/lsqEw9FhwQbNAar5O3N995kkzUlXCIeSySJaChTAWQST+6a4uiBfNg9ptHiOXGL8rX59RFsDu21qHIq+NgfSa0xCpVifpPy3/8Ahj+R/rM57xfwB/nNiYYvWWIfUAELtqOqzsA1nb0kLkmjD4tQq5ofvuDve9NYI4IIb8esn5fEXEw7UKGdRbABibHXettuu0leOZVcwhKeZ0sigaYdVDVRPac/8PAaWRrRtVoaNA0NQI999u5ll0Sachm3wcxoc8+euBqXkgdA1Hb1nb5prO+itPLHpYvb8b78zgM7ksUYofEU4h1Uug2TQJvYbgV17y3fxjExSEw8IlksAga2Q7A2+yp1/e4hqyC8xXITWLNGqa0C2NtvSxv2lTnfFzTHWGIB0gVpVhuhLHbkA7E3ZEzwfh/HxKbFcIB0sOw/iNIv8KzcMtlMCmJ+c+3msPW9A628oFnpUrSFEXxHPvoR8FSy41HyqWZHF6x6XVcXanfeRsDI51yGUMtdWbT731v7dpa5D4jTFxTgIFTEZCU/aorqvVe37N0OxmWFjZnEVSxYWKbfQBv0pa9CLFfaSiSHh/DGNevGzIB6sd9hwNTH+kuPDvAMF9ziHFUbNTeVtt1JUDUPTeRMp4K2IdLN1u7OoAE3yWHWtiOk67J5VcJFRRSqKH9SfUneXirIbNyoAAAKAFADgDtM4iXKiIiAIiIAiIgCYsaEymnHO0IEZ2mBM9YzS7y5Q9ZpqLE8b/8AOZFzudXDFsTvwByf7D1O0ry74+HwcMrio1DUFdG2BNjzAGydq2uUlJIlRs353xBFpVUYrXybKKRZBoA6txzwJVeJ4jqRi4rE2aF7aVLIpI6cE8bepl5lPDgoBPvqbY99h0o8dBZqrqQfirBAwweQARvyTakb/wAJnJybOiSXRj4njoqeUgEYZdQosjT+1Xbv9574Dm1fSGVSrEkA0dDjkfz/AAO8r/BcRWw1ZlOtA6Bms7AkUQPq2NSqwcw+DmdJOxJ2FgFk8yMBvRrSD94oHT+PI2oHcjvudOo3f51fhZO8McrhqrmjwAeaPG33qZZnG3G4FrY5LncWFUcjjj+kr83mAqqQwRyxsHzudrOnTZ52/PEh9EVTsmZkLrKk7Ouhhe4O5Q+nUe9SFmc0qoGdhakqQQSNSg3pXg2N972I7iUT5t3JXBVmfa2PmbysGFkHSgtRySfbrbZ/4fbMOmIWGGCg1j/EKAo9TVi/QSqXqTZXY3xBWyqSrCm1MQ3Xgq1LwOOewmGWymazL6/ljDB7jSNutbsT6n8y2zT5XIIH0h3JUeYjVRNFgOaAJPlE5vx74vxcRwuC7JhgbgLo1n3+qvSxO0ccpdIpLLCPbOobwzBQf+RiB2FWi7b87gG/yaMrc98YrhgpgYYUqa89XdkGlGw4Pfp3nFYmdxGJ85XVyF8oO1dJHVJohpP7Myz1i/ii/wAXxTHzAZ2dm0G9PAHm5obVp/rI5x2bk9/1bVX5/lPfBsb5b0eGIDenY/rJfiWUCPY+ltx6dx2naOKMZU18HGeaUo2n8ll8L5XU5cAAqp0muDYI+1n+c6nDcFvpB1jVR6UfOvuGo+5Mp/hBPKx+35I/tLvCQaj21Ejbg1Rr33/J7zFlV5Wjbi4xqyw8LzFs6aQpU7AdR3/r95ZynwjpdW7nQfW+P1H6y4Es0l0Wi35PYiJBYREQBERAEREAxkPHfzEXwBt73Jko8XE/8hhfKD9NP+8tFWUm6r5JDvKHP+LHX8rBXW5v/KvcnvX4HWbcxnfmucNDY4LXzX1AV04/MhZbDAJwkIS2/wBRq1UtzpPTsbHtScvCLqPqR8FjZZ1+Y+1E70wrcA9SQKvqBS9Z0BQhELkmxoe9iQ+246b19rlbmm/6aggBbfzkb9CdI6Df3NbmW+sYiX0ZfxYnFlk+Sk+IsN3yxo7q9ve96Qwuj01aW34G/SYeEYBxsmcNjdMyo13dAEUT0ssvtt0lkmKwN7W673xrTyt72OnZZAzPiCYZDOQSteXy6t/3Uuk49Tzx1JklB4IKxXQsUY99hrHIPa759JH8WwsU4wbFRiFYBQlEnkigPqG36yXms/8AOxKwUZn/AGm0gaudJIGygcaiZavlVRA+axAgB2VXIvsNWxv0Xf1MvzZDpK2RH8VxMcjDwkJKirpSy8WGf6U4IrzGTsD4e/bzOIAKsoCa93Y+Ztu5AlXnPjNUGjK4XfzsKHuFG5+5E5rOZrFxzeK7PvenhR7KNvvO0NNKXfBmyaqMeuTs838UZbLjRgKHI/cA0j+L6fxc5rP/ABNmcbhvlr2S9X+s7/ipXLggdJuGHNcNNCPizFPUzl5oifJJNkkk8k7k+5PM2LgjtJISZBJoUTO5EV0meHhTeMPeZhJO0jca1SWeC7YiDCrUwa0Pf95T9t79JDVZuwHKMGU0QbEhxsmMqfsdR4HlWw1YHazRPer69hdfaXOHOMTM4mK6qXY6mAobDc9hO2QTFkx7Hb7fJ6WDIpqkuFwbjxfamHupsfylzKdJa4XA9h/KcZGhGyIiVLCIiAIiIAiIgGM5DxUF8Z1U8bMegFCwfsa68+wN94xnPlpsaYg0ewH1NXUixQ7kdLlOXGGHcguVQub5YovLbckBfuxlXNx4XkhxUqvwVWfJwMbCYAhTYaxv5zyR7rZlfnMU4OIju/mdQGAry01K46AAkGv8Tdpt8Zzf/U5ZMcLRVyrAG9LVanvW4/1SF4xmVfLKWBDMAUHIs7EfzF+glUXOtzapiqjNdlQaHPTr2Fn8zVmM0yChX0bfuILqy3Wu5/rKxPFAmWTW3n0EsgI3Bat2vyrfXr6ysfNHG2fEVEF7Cr/gTvufMwvsBKVYaLPDzxcYiIbdEXFQ19TLs1AjgjSvH7V9pVYGQ2D5h9IO+gG3b3PT9T7SVg4tDRgpoXqx+pvU9/v+k3YWS3trY9zOkYMq5GH/AFJrRhIETvW59T3PqbkUeDI763Bdv8TMQPYE8enEusPKySmBOsVt6KS+7sgYOUCigAB2AoSvzPw8WcsrKqneqOx67dp0q4UzCTpGcou0c544yVM4HM5NsNtLdrHSweDXT2msJLHxbF14rsDYB0j2G387kOp6MbcVZ482lJpdGrTPdM21FS1FbNemehZnU34GWZzpRCWF3/zpD4Ct9EcLMwI0yVkMo2K4RfcnsOpkNpK2TFOTpFh8OZUtia+iD/2IoD8WfxOrUTRlMquGoRBQH5J6k+skLPPyz3Ss9jBj2Ro2pLVOB7CVeGJbCcZHZHsREqWEREAREQBERAOR8bZXxjqJCIKZt9qI2HrZ/XtN+ZrUDypG/Yg+Vv0IP8Mh5slsbHwTtq8y/wCYb7fwlT955jZpUREbfSKJ/wAIWmPtyBOMuyyZpwcqiI+CLZH1E2BqJIAXTwB9IruZRDHREOA7I4RjoJojV3U+5/WR/iHxF9ZRgUGrSLUgOw2LA8NZ7dKmvwnwkv5jdepP6CXjFsOSRofI/MKhNSaSPpYgWP2r51eu8vcp4dsNRZyByxLfqdzLHLZIKKAqT0wZ1UaObZEwsrUlJgzemHNqpJINK4c2DDmwLPagGASehZnU9qSDlPH/AAvQTip9LG2H7pPX2JlJU+gZvADoyHYMpF9ux/M4Eib8E3KNPweVq8ajK10zCJnPKmgyHuGtkACySBXezxJORzzYQcKBbgC+oq+PzNGA+llbnSwavY3PcZAGIBsXse46cekq0nwyybjyuzACdp4R4eMJP8TAFj/QegnJ5EE4iVzrX+YndzLqZNVE26KKbcmBM1ExE2KJjPRN+XWyPeWUh5RN7kyVZZCIiQSIiIAiIgCIiAch8VpoxsHG6Fwpq/2iEb9GU/wGcn4z4prcIrBUDhGeiQSCdgdgQu9C7Ne0+h/EuS+bl2ULqZacCyN17Ebg1detT5T454c7KLDlFN2XZ9J4BF9PWVa5JK/CyrvmWVm1KjkggaRoB8pC9LFT6hgZUAAAUBOH+DsuFxdOJpIdaG5s9QKNdiftPo4Sp2tOKo4Ri1J2aUw5mqTbpntSC5gFmVT2ogHlT2IkgREQDDFxFRSzEBQLJM4DGK6m07LqOkel7fpOl+KcYhEQcOxJ9lrb8kficvNumjUd3qeZrJ3JR9BE9ipqMQm7LKPMTwEY/cjSP1YfiaZkgJNCyTtQ5N9JD6LR7N2Qwy2IgBIJZdxyN+Z3TGrJ2FX7Sj8G8GZGDvVj6VG9HuT/AEmjOZp8bEOEppdemh1rkse2xNTHkrJLh8I9DDeGFtct8IvsjmPmLrA2LED1ANXJiCacvghFCKNgK/3k3LYdn0Eyyq+DbFOlfZLwFoTbETmdBERAEREAREQBERAEgZrwnAxDb4Sse9UfyN5PiAQF8IwRwn/s395rx8DT7d5ZTF0BFGFwQ1ZUkTCScbCKmaSJcqYRMpjAEREARE8kgh+K5T5uGy/tcr/mH9+PvOIqfQ5wOYwijshFUxFffabNLLhxPO1sOVI1RPanoE1GGjwCdL8MZYaGcr5tVBj2AF19zIPgnhoxGLODoHuNR7X2/wBp1OFhKgCqAoHAEyZ8qrajdpMDve+iL4tmjh4ZYVqJCj0J6/gGaPAcjoXW31PxfIXn8nn8S0bDBqwDRsWLo95tRZnUqjSNjx3Pc/HR7hpZllhJQqYYGDW55m6cWzukexESCRERAEREAREQBERAEREAREQDXiIGFGQsbBIlhPCJKdENFQVnhEnYuW7fiRWSWsho0xMys8qCDGeTKoqAYyg+JMqWZGVWYkFTQsbbjjruZ0NRUvCW2VnPJjU40zil8MxTxhtv3Ffz4lnkPAD9WKdv3Af5n+06OoCzrLUSapcHGOkhF2+TFEAAAFACgBwJmBPQskYWXJ9pns1JGpEuTsDArc8zPDwgvEzlWyyR7ERIJEREAREQBERAEREAREQBERAEREAREQBMGQHkTOIBEfK9jNLZcjpLGJNkUVJw55olrQmPy17CTZFFZojRLP5a9hPdI7CLFFeuET0m5Mqeu0mxI3E0akwQPWbYiQSIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAf//Z"
-                  alt="logo"
-                />
+                <img src="/images/index/navMenu/logo.JPG" alt="logo" />
               </div>
               <p>AD Translations</p>
             </div>
@@ -84,15 +89,16 @@
                   </a>
                 </li>
                 <li>
-                  <a href="/abourUs.html">
+                  <a href="/aboutUs.html">
                     <button class="btn_aboutUs">О нас</button>
                   </a>
                 </li>
               </ul>
             </div>
             <div class="navMenu_inner_number">
-              <button id="btn_ru">RU</button>
-              <button id="btn_en">EN</button>
+              <button class="btn_ru">RU</button>
+              <button class="btn_en">EN</button>
+              <button class="btn_kg">KG</button>
             </div>
           </div>
         </div>
@@ -102,31 +108,31 @@
         <div class="header_content">
           <div class="container">
             <div class="header_inner">
-              <h1>Самые лучшие языковые переводы в Кыргызстане</h1>
+              <h1>The best language translations in the world</h1>
               <div>
-                <h2>Заказывая у нас перевод вы получаете</h2>
+                <h2>When ordering a translation from us, you get</h2>
                 <ul>
                   <li>
                     <div>
                       <img src="/images/index/header/price.png" alt="" />
                     </div>
-                    <p>Низкие цены</p>
+                    <p>Low prices</p>
                   </li>
                   <li>
                     <div>
                       <img src="/images/index/header/speed.png" alt="" />
                     </div>
-                    <p>Экономию времени и средств</p>
+                    <p>Saving time and money</p>
                   </li>
                   <li>
                     <div>
                       <img src="/images/index/header/save.png" alt="" />
                     </div>
-                    <p>Гарантия качества</p>
+                    <p>Quality assurance</p>
                   </li>
                   <li>
                     <div><img src="/images/index/header/car.png" alt="" /></div>
-                    <p>Доставка переводов в ваш офис</p>
+                    <p>Delivery of translations to your office</p>
                   </li>
                 </ul>
               </div>
@@ -204,9 +210,8 @@
         </div>
       </div>
       <div class="document">
-        <div class="container">
-          <h3>КАКИЕ ДОКУМЕНТЫ ПРИНИМАЕТ В РАБОТУ НАШЕ БЮРО ПЕРЕВОДОВ</h3>
-          <div class="document_inner">
+        <div class="document_parent">
+          <!-- <div class="document_inner">
             <div>
               <h4>Организационно-административные</h4>
               <p>
@@ -234,6 +239,48 @@
                 медицина, фармацевтика, Юридическая, Маркетинг, ИТ, Техническая
               </p>
             </div>
+          </div> -->
+        </div>
+        <div class="document_left">
+          <div>
+            <div>
+              <h4>Организационно-административные</h4>
+              <p>
+                договоры, инструкции, правила, контракты, положения,редактура,
+                письменный перевод и пр.
+              </p>
+            </div>
+          </div>
+          <div>
+            <div>
+              <h4>Справочные и информационные</h4>
+              <p>
+                паспорта, резюме, характеристики, заявления, доверенности,
+                жалобы и др.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="document_center">
+          <h3>КАКИЕ ДОКУМЕНТЫ ПРИНИМАЕТ В РАБОТУ НАШЕ БЮРО ПЕРЕВОДОВ</h3>
+        </div>
+        <div class="document_right">
+          <div>
+            <div>
+              <h4>Личные</h4>
+              <p>
+                служебные и объяснительные записки, акты, докладные, справки,
+                выписки, озвучка, выразительный перевод, транскрипция, дубляж
+              </p>
+            </div>
+          </div>
+          <div>
+            <div>
+              <h4>проверка качества перевода в таких языковых областях как:</h4>
+              <p>
+                медицина, фармацевтика, Юридическая, Маркетинг, ИТ, Техническая
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -250,8 +297,7 @@
                 >
               </button>
               <button>
-                <a href="">Telegram</a>
-                <!-- https://t.me/myusername -->
+                <a href="tg://resolve?domain=ad_translations">Telegram</a>
               </button>
             </div>
           </div>
@@ -406,17 +452,15 @@
               </div>
               <div class="location">
                 <span>Наш адрес</span>
-                <p>г.Бишкек, ул.Байтик Баатыра, 41</p>
+                <p>Джалал-Абад, Жаңы-Арал 88</p>
               </div>
               <div class="work_time">
                 <span>Время работы</span>
-                <p>
-                  Пн - Пт 9.00 - 18.00. Сб 10.00 - 15.00 без перерыва на обед
-                </p>
+                <p>08.00 - 22.00</p>
               </div>
               <div class="email">
                 <span>Наша почта</span>
-                <p>nurdinDjumabekov2002@gmail.com</p>
+                <p>ajorobayeva@gmail.com</p>
               </div>
             </div>
           </div>
